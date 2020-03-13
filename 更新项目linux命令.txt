@@ -1,0 +1,17 @@
+普通web项目：
+------------------------------------------------------------------------------------
+修改文件名称: mv xxx.xx xxx.xx
+上传war包
+进入tomcat的bin目录停止服务: cd /home/..../bin   关闭tomcat:  ./shutdown.sh
+查看项目进程获取PID:  ps -ef|grep java
+如果进程还在则杀进程： kill -9 xxxx
+进入指定目录：cd  /home/..../webapps  解压war覆盖原有文件: jar -xvf  ../xxx.war
+进入tomcat的bin目录： cd  /home/..../bin   启动tomcat:  ./startup.sh
+
+spring-boot项目：
+--------------------------------------------------------------------------------------
+修改文件名称：mv xxx.jar xxx.jar_xxx
+上传jar包
+查看项目进程获取PID:  ps -ef|grep java
+如果进程还在则杀进程： kill -9 xxxx
+在jar目录下启动项目：nohup java -jar xxx.jar &
