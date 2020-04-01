@@ -50,7 +50,7 @@ rpm -ivh --force --nodeps yum*  最终的强制安装指令
 4、配置源
         更改yum库的地址，可以使用网易的开源软件镜像站点下载地址（http://mirrors.163.com/.help/CentOS6-Base-163.repo），也可以使用阿里云的（http://mirrors.aliyun.com/repo/Centos-7.repo）或者其他的站点。这里以163的站点为例：
 
-yum-config-manager --add-repo="http://mirrors.163.com/.help/CentOS6-Base-163.repo"
+yum-config-manager --add-repo="http://mirrors.aliyun.com/repo/Centos-7.repo"
         然后切换到/etc/yum.repos.d/目录下，修改文件内容，将文件中的“$releasever”改为“7”，“RPM-GPG-KEY-CentOS-6”改为“RPM-GPG-KEY-CentOS-7”，使用一下命令进行全局替换。
 
 :%s/$releasever/7/ge 
